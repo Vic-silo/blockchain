@@ -13,4 +13,5 @@ wheels/
 .venv
 
 # Environment variables
-.env*
+.env
+.env.test
