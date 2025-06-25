@@ -1,6 +1,6 @@
-db = db.getSiblingDB('blockchain');
+db = db.getSiblingDB('db_name');
 db.createUser({
-  user: "admin",
-  pwd: "admin",
-  roles: [{ role: "readWrite", db: "blockchain" }]
+  user: "user",
+  pwd: "pwd",
+  roles: [{ role: "readWrite", db: "db_name" }]
 });
