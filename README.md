@@ -102,6 +102,7 @@ podido realizar toda la prueba con los datos reales de la API de Blochchain.com,
 sin embargo, si se ha podido realizar los test de integración y unitarios
 pertinentes para asegurarse de que los endpoints devuelven los datos esperados y que
 las llamadas a la API devuelven la entidad esperada al dominio de la aplicacion.
+
 ---
 ### TEST
 Se ha realizado dos tipos de test. De integracion y unitarios.
