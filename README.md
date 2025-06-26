@@ -15,9 +15,10 @@ la adaptación al entorno t2ó VS el conocimiento de otras bases de datos.
 Para el despliegue de la aplicación, se ha utilizado **Docker**. Haciendo uso de 
 **docker compose** para los servicios de api + base de datos.
 
-En cuando al entorno de ejecución de la aplicación, se ha utilizado el gestor de 
+En cuanto al entorno de ejecución de la aplicación, se ha utilizado el gestor de 
 paquetes y projectos **uv** por su gran diferencia de rendimiento frente a otros
 conocidos como pip o poetry.
+
 ---
 ### DESPLIEGUE
 Como se ha mencionado, la aplicación está preparada para ejecutarse en un contenedor
@@ -102,6 +103,7 @@ podido realizar toda la prueba con los datos reales de la API de Blochchain.com,
 sin embargo, si se ha podido realizar los test de integración y unitarios
 pertinentes para asegurarse de que los endpoints devuelven los datos esperados y que
 las llamadas a la API devuelven la entidad esperada al dominio de la aplicacion.
+
 ---
 ### TEST
 Se ha realizado dos tipos de test. De integracion y unitarios.
