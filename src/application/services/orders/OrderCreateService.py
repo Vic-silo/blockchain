@@ -1,6 +1,7 @@
 from .OrderService import OrderService
 from ..symbols import SymbolQueryService
 from asyncio import gather
+from src.core import logger
 
 
 class OrderCreateService(OrderService):
@@ -21,6 +22,9 @@ class OrderCreateService(OrderService):
         # Get from third_party the order by symbol
         symbol_orders = await self.order_api.fetch_order_book_l3(
             compound_symbol=symbol)
+        if not symbol_orders:
+            logger.warning(f'[!] Not orders found for symbol {symbol}')
+            return
         # Store in database the orders
         await self.repository.store_orders(orders=symbol_orders)
 
